@@ -1,0 +1,6 @@
+{
+    "require": {
+        "laminas/laminas-escaper": "^2.14",
+        "phpoffice/phpword": "dev-master"
+    }
+}
