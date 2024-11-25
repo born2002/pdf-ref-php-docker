@@ -1,4 +1,4 @@
-FROM php:8.3.9-apache
+FROM php:7.4-apache
 
 # Copy .htaccess file if needed
 # COPY .htaccess /var/www/html/.htaccess

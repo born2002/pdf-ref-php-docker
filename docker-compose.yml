@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  word-web:
-    container_name: word-web
+  pdf-web:
+    container_name: pdf-web
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,11 +10,9 @@ services:
       - 8003:80
     volumes:
       - ./:/var/www/html
-      # - ./.htaccess:/var/www/html/.htaccess
-      # - ./tmp:/var/www/html/tmp
     networks:
-      - proxy-setting-locale_locale-network
+      - locale-network
 
 networks:
-  proxy-setting-locale_locale-network:
-    external: true
+  locale-network:
+    driver: bridge

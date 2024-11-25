@@ -1,6 +1,17 @@
 {
+    "name": "asus/word-generate-php",
+    "autoload": {
+        "psr-4": {
+            "Asus\\WordGeneratePhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "born2002",
+            "email": "96400459+born2002@users.noreply.github.com"
+        }
+    ],
     "require": {
-        "laminas/laminas-escaper": "^2.14",
-        "phpoffice/phpword": "dev-master"
+        "mpdf/mpdf": "^6.1"
     }
 }
